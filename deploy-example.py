@@ -6,10 +6,12 @@ import plotly.graph_objs as go
 
 from dash.dependencies import Input, Output
 
-
 import random
 
-app = dash.Dash()
+external_stylesheets = ['https://codepen.io/chriddyp/pen/bWLwgP.css']
+
+app = dash.Dash(__name__, external_stylesheets=external_stylesheets)
+
 server = app.server
 
 trace = go.Scatter(
@@ -17,6 +19,7 @@ trace = go.Scatter(
     y=random.sample(range(30),4)
 )
 data = [trace]
+
 app.layout = html.Div(children=
                           [html.H4('Graph Example'),
                            dcc.Graph(id='main-graph',
