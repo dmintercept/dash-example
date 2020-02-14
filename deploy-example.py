@@ -11,6 +11,12 @@ import random
 
 app = dash.Dash()
 server = app.server
+
+trace = go.Scatter(
+    x=[1, 2, 3, 4],
+    y=random.sample(range(30),4)
+)
+data = [trace]
 app.layout = html.Div(children=
                           [html.H4('Graph Example'),
                            dcc.Graph(id='main-graph',
