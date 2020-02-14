@@ -38,4 +38,4 @@ def update(n_intervals):
     return go.Figure(data=data)
 
 if __name__ == '__main__':
-    app.run_server(debug=False)
+    app.run_server(debug=False,port=8000)
