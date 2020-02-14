@@ -17,10 +17,12 @@ https://minimal-dash.herokuapp.com
 
 7. heroku create my-dash-app
 
-8. git add .
+8. git init
 
-9. git commit -m 'Initial app'
+9. git add .
 
-10. git push heroku master # deploy code to heroku
+10. git commit -m 'Initial app'
 
-11. heroku ps:scale web=1
+11. git push heroku master # deploy code to heroku
+
+12. heroku ps:scale web=1
