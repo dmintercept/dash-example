@@ -16,9 +16,9 @@ https://minimal-dash.herokuapp.com
 
     - https://devcenter.heroku.com/articles/heroku-cli
 
-7. heroku create my-dash-app
+7. git init
 
-8. git init
+8. heroku create my-dash-app
 
 9. git add .
 
