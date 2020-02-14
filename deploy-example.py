@@ -20,11 +20,11 @@ trace = go.Scatter(
 )
 data = [trace]
 
-app.layout = html.Div(children=
-                          [html.H4('Graph Example'),
-                           dcc.Graph(id='main-graph',
+app.layout = html.Div(children=[
+                            html.H4('Graph Example'),
+                            dcc.Graph(id='main-graph',
                                      figure={'data':data}),
-                           dcc.Interval(id='graph-update',
+                            dcc.Interval(id='graph-update',
                                         interval=3 * 1000, 
                                         n_intervals=0)
                           ]
